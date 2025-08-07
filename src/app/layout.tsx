@@ -4,6 +4,7 @@ import { createClient } from "@/prismicio";
 import Header from "@/components/Header";
 import clsx from "clsx";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const nunito = Nunito({
   variable: "--font-nunito",
@@ -43,6 +44,7 @@ export default function RootLayout({
       <body className={clsx(nunito.variable, nunitoSans.variable)}>
         <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
